@@ -8,7 +8,7 @@ pipeline {
         stage('Клонирование репозитория') {
             steps {
                 echo 'Клонирование репозитория из GitHub...'
-                git 'https://github.com/<ваш-аккаунт>/<имя-репозитория>.git'
+                git 'https://github.com/FraxinRus/MRPP4.git'
             }
         }
         stage('Сборка') {
