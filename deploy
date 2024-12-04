@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "Деплой $1..."
+sleep 2
+echo "Деплой завершен."
