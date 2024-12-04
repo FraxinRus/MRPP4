@@ -7,6 +7,7 @@ pipeline {
     stages {
         stage('Клонирование репозитория') {
             steps {
+                deleteDir() // Удаляет все файлы перед новым клонированием
                 echo 'Клонирование репозитория из GitHub...'
                 git 'https://github.com/FraxinRus/MRPP4.git'
             }
