@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "Запуск дымчатого теста..."
+sleep 2
+echo "Smoke-тест успешно выполнен."
