@@ -5,13 +5,6 @@ pipeline {
         DISABLE_AUTH = true
     }
     stages {
-        stage('Checkout') {
-            steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']],
-                          userRemoteConfigs: [[url: 'https://github.com/FraxinRus/MRPP4.git']]
-                ])
-            }
-        }
         stage('Клонирование репозитория') {
             steps {
                 echo 'Клонирование репозитория из GitHub...'
